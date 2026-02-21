@@ -28,7 +28,7 @@ export function Nav() {
     } else {
       document.body.style.removeProperty("overflow");
     }
-    return () => document.body.style.removeProperty("overflow");
+    return () => { document.body.style.removeProperty("overflow"); };
   }, [open]);
 
   return (
