@@ -5,93 +5,62 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      {/* Hero — full viewport */}
+      {/* Hero */}
       <section className="h-screen flex flex-col justify-center px-6 md:px-12 relative">
-        <div className="max-w-site mx-auto w-full">
-          <p className="text-dim text-sm tracking-[0.2em] uppercase mb-6">
-            Technical Program Manager
-          </p>
-          <h1 className="text-[clamp(3rem,9vw,10rem)] font-bold leading-[0.88] tracking-tight">
-            RENATA
-            <br />
-            AGUILAR
+        <div className="max-w-prose mx-auto w-full">
+          <h1 className="font-serif text-[clamp(2.5rem,6vw,4.5rem)] leading-[1.1] tracking-tight">
+            Bringing clarity to complex systems.
           </h1>
-          <p className="text-dim text-lg md:text-xl mt-8 max-w-md">
-            Bringing order to chaos.
+          <p className="text-dim text-lg mt-8 leading-[1.7]">
+            Technical Program Manager operating at the intersection of engineering execution and strategic alignment.
           </p>
         </div>
         <ScrollIndicator />
       </section>
 
-      {/* Intro section — visible on scroll */}
-      <section className="px-6 md:px-12 py-32 border-t border-rule">
-        <div className="max-w-site mx-auto">
+      {/* Body */}
+      <section className="px-6 md:px-12 pt-32 pb-32">
+        <div className="max-w-prose mx-auto">
           <Reveal>
-            <p className="text-dim text-lg md:text-xl leading-[1.8] max-w-2xl">
-              I turn ambiguity into action. With a background that spans military
-              discipline and startup chaos, I lead cross-functional teams through
-              complex programs&mdash;bridging technical teams, business stakeholders,
-              and customers to ship what matters.
-            </p>
+            <div className="space-y-10 text-lg leading-[1.8] text-dim">
+              <div>
+                <p>I work inside complexity.</p>
+                <p>High-growth environments.</p>
+                <p>Emerging standards.</p>
+                <p>Teams navigating real ambiguity.</p>
+              </div>
+              <p className="text-fg">
+                The role is straightforward. The execution rarely is.
+              </p>
+              <div>
+                <p>I create alignment.</p>
+                <p>I restore clarity.</p>
+                <p>I protect execution integrity.</p>
+              </div>
+              <p className="text-fg">
+                This reflects how I operate.
+              </p>
+            </div>
           </Reveal>
         </div>
       </section>
 
-      {/* What I do — numbered blocks */}
+      {/* CTAs */}
       <section className="px-6 md:px-12 pb-32">
-        <div className="max-w-site mx-auto">
+        <div className="max-w-prose mx-auto flex flex-col sm:flex-row gap-5">
           <Reveal>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-20">
-              What I Do.
-            </h2>
-          </Reveal>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
-            <Reveal>
-              <div>
-                <span className="text-teal text-sm font-mono">01</span>
-                <h3 className="text-xl font-bold mt-3 mb-4">Lead Programs</h3>
-                <p className="text-dim leading-relaxed">
-                  End-to-end ownership of complex, cross-functional programs from
-                  discovery through delivery.
-                </p>
-              </div>
-            </Reveal>
-            <Reveal>
-              <div>
-                <span className="text-teal text-sm font-mono">02</span>
-                <h3 className="text-xl font-bold mt-3 mb-4">Bridge Teams</h3>
-                <p className="text-dim leading-relaxed">
-                  Translate between engineering, product, design, and business
-                  stakeholders so nothing gets lost.
-                </p>
-              </div>
-            </Reveal>
-            <Reveal>
-              <div>
-                <span className="text-teal text-sm font-mono">03</span>
-                <h3 className="text-xl font-bold mt-3 mb-4">Build Systems</h3>
-                <p className="text-dim leading-relaxed">
-                  Design the processes, standards, and frameworks that turn good
-                  teams into unstoppable ones.
-                </p>
-              </div>
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="px-6 md:px-12 pb-32 border-t border-rule pt-20">
-        <div className="max-w-site mx-auto flex flex-col md:flex-row md:items-center justify-between gap-8">
-          <Reveal>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-              Interested in working together?
-            </h2>
+            <Link href="/journey" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
+              The Journey &rarr;
+            </Link>
           </Reveal>
           <Reveal>
-            <Link href="/connect" className="text-teal text-lg hover:opacity-70 transition-opacity shrink-0">
-              Get in touch &rarr;
+            <Link href="/thinking" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
+              How I Think &rarr;
+            </Link>
+          </Reveal>
+          <Reveal>
+            <Link href="/connect" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
+              Connect &rarr;
             </Link>
           </Reveal>
         </div>

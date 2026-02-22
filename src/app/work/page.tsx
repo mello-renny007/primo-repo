@@ -1,73 +1,65 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
+import Link from "next/link";
 
-export const metadata: Metadata = { title: "Work" };
+export const metadata: Metadata = { title: "The Work" };
 
-const projects = [
+const sections = [
   {
-    title: "Learning & Employment Records (LER) Pilot",
-    role: "Technical Program Manager",
-    challenge: "Spearhead cross-functional pilot for secure digital credential issuance and verification in emerging credentialing technology.",
-    impact: "Transformed complex compliance requirements into intuitive user solutions, bridging technical teams, business leaders, and external partners.",
+    title: "Identity & Security Platforms",
+    text: "Led decentralized identity initiatives aligned with emerging standards and regulatory ambiguity. Coordinated backend, API, compliance, and ecosystem stakeholders to deliver interoperable solutions.",
   },
   {
-    title: "New World E-Commerce App",
-    role: "Technical Program Manager | Foodstuffs (New Zealand)",
-    challenge: "Launch mobile grocery shopping app enabling direct purchases without third-party dependencies.",
-    impact: "Delivered end-to-end mobile solution with pickup/delivery for one of New Zealand\u2019s largest grocery retailers.",
+    title: "Enterprise Authentication Systems",
+    text: "Directed cross-functional delivery for passwordless authentication platforms supporting enterprise environments. Strengthened roadmap predictability and Agile execution maturity.",
   },
   {
-    title: "Transportation & Warehousing Platform",
-    role: "Technical Program Manager | South America",
-    challenge: "Replace manual logistics processes plagued by inefficiency and corruption with automated platform.",
-    impact: "Streamlined distribution and last-mile delivery, bringing transparency to carrier-driver relationships while ensuring regulatory compliance and fair pay.",
+    title: "SaaS Product Launches",
+    text: "Managed MVP-to-commercialization lifecycles, translating market ambiguity into prioritized engineering roadmaps.",
+  },
+  {
+    title: "Governance & Delivery Design",
+    text: "Built program structures and delivery governance models that improved cross-team visibility and milestone predictability.",
   },
 ];
 
 export default function Work() {
   return (
     <div className="px-6 md:px-12">
-      <div className="max-w-site mx-auto">
-
-        <section className="pt-40 pb-32">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[0.95] mb-6">
-            Where I&apos;ve<br />Made Impact.
+      <div className="max-w-prose mx-auto">
+        <section className="pt-48 pb-32">
+          <h1 className="font-serif text-5xl md:text-6xl tracking-tight leading-[1.1] mb-6">
+            Where This Discipline Has Been Applied.
           </h1>
-          <p className="text-dim text-lg mb-24">
-            Programs driven from ambiguity to delivery.
+          <p className="text-dim text-lg leading-[1.7] mb-24">
+            Different domains. Same discipline: structured execution inside complex systems.
           </p>
 
-          <div className="space-y-0">
-            {projects.map((p, i) => (
+          <div className="space-y-20">
+            {sections.map((s, i) => (
               <Reveal key={i}>
-                <article className="border-t border-rule py-16 md:py-20">
-                  <div className="flex items-start gap-6 md:gap-10 mb-10">
-                    <span className="text-teal text-sm font-mono mt-1 shrink-0">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <div>
-                      <h2 className="text-2xl md:text-3xl font-bold tracking-tight leading-tight">
-                        {p.title}
-                      </h2>
-                      <p className="text-dim text-sm mt-2">{p.role}</p>
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:ml-[calc(1.5rem+2.5rem)]">
-                    <div>
-                      <p className="text-faint text-xs uppercase tracking-[0.15em] mb-3">Challenge</p>
-                      <p className="text-dim leading-relaxed">{p.challenge}</p>
-                    </div>
-                    <div>
-                      <p className="text-faint text-xs uppercase tracking-[0.15em] mb-3">Impact</p>
-                      <p className="text-fg leading-relaxed">{p.impact}</p>
-                    </div>
-                  </div>
+                <article className="border-t border-rule pt-10">
+                  <h2 className="font-serif text-2xl md:text-3xl tracking-tight mb-5">
+                    {s.title}
+                  </h2>
+                  <p className="text-dim leading-[1.8]">{s.text}</p>
                 </article>
               </Reveal>
             ))}
           </div>
-        </section>
 
+          <Reveal>
+            <p className="text-fg text-lg mt-24 mb-12">
+              The environments change. The discipline remains the same.
+            </p>
+          </Reveal>
+
+          <Reveal>
+            <Link href="/connect" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
+              Connect &rarr;
+            </Link>
+          </Reveal>
+        </section>
       </div>
     </div>
   );

@@ -8,16 +8,18 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        serif: ["var(--font-playfair)", "Georgia", "serif"],
       },
       colors: {
-        bg: "#0a0a0a",
-        fg: "#e8e8e8",
-        dim: "#999999",
+        bg: "#111111",
+        fg: "#E8E8E8",
+        dim: "#9C9C9C",
         faint: "#777777",
-        rule: "#2a2a2a",
-        teal: "#2dd4bf",
+        accent: "#2F3E46",
+        rule: "#2F3E46",
       },
       maxWidth: {
+        prose: "700px",
         site: "1200px",
       },
     },

@@ -23,8 +23,7 @@ export function Reveal({ children, className = "" }: { children: ReactNode; clas
       className={className}
       style={{
         opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(32px)",
-        transition: "opacity 0.7s ease, transform 0.7s ease",
+        transition: "opacity 0.6s ease",
       }}
     >
       {children}

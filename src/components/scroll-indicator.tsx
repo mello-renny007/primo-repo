@@ -19,14 +19,12 @@ export function ScrollIndicator() {
       style={{ opacity: visible ? 1 : 0 }}
       aria-hidden="true"
     >
-      <span className="text-faint text-[10px] tracking-[0.25em] uppercase">
+      <span className="text-dim text-[10px] tracking-[0.25em] uppercase">
         Scroll
       </span>
-      <span className="text-teal animate-bounce">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M8 3v10M3 8l5 5 5-5" />
-        </svg>
-      </span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-dim">
+        <path d="M8 3v10M3 8l5 5 5-5" />
+      </svg>
     </div>
   );
 }

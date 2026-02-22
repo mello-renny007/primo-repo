@@ -7,45 +7,41 @@ export const metadata: Metadata = { title: "Connect" };
 export default function Connect() {
   return (
     <div className="px-6 md:px-12">
-      <div className="max-w-site mx-auto">
-        <section className="pt-40 pb-32">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[0.95] mb-6">
-            Let&apos;s Talk.
+      <div className="max-w-prose mx-auto">
+        <section className="pt-48 pb-32">
+          <h1 className="font-serif text-4xl md:text-5xl tracking-tight leading-[1.15] mb-20">
+            Let&apos;s build something that holds under pressure.
           </h1>
-          <p className="text-dim text-lg mb-24 max-w-md">
-            Always open to interesting conversations and new opportunities.
-          </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
-            <Reveal>
-              <address className="space-y-10 not-italic">
-                <h2 className="sr-only">Contact Information</h2>
-                <div>
-                  <p className="text-faint text-xs uppercase tracking-[0.15em] mb-2">Email</p>
-                  <a href="mailto:renata.aguilar007@gmail.com" className="text-fg text-lg hover:text-teal transition-colors">
-                    renata.aguilar007@gmail.com
-                  </a>
-                </div>
-                <div>
-                  <p className="text-faint text-xs uppercase tracking-[0.15em] mb-2">LinkedIn</p>
-                  <a href="https://www.linkedin.com/in/renata-aguilar-5382954b" target="_blank" rel="noopener noreferrer" className="text-fg text-lg hover:text-teal transition-colors">
-                    Renata Aguilar
-                  </a>
-                </div>
-                <div>
-                  <p className="text-faint text-xs uppercase tracking-[0.15em] mb-2">Location</p>
-                  <p className="text-fg text-lg">Houston, Texas</p>
-                </div>
-              </address>
-            </Reveal>
+          <Reveal>
+            <div className="space-y-10 text-dim text-lg leading-[1.8] mb-24">
+              <p>
+                If you&apos;re operating in complexity and value disciplined execution, thoughtful alignment, and structured delivery&mdash;we&apos;ll likely get along.
+              </p>
+              <p>
+                I prefer environments where standards are high, ambiguity is real, and execution actually matters.
+              </p>
+              <p className="text-fg">
+                I&apos;m interested in problems that require precision.
+              </p>
+            </div>
+          </Reveal>
 
-            <Reveal>
-              <div>
-                <h2 className="sr-only">Send a Message</h2>
-                <Form />
-              </div>
-            </Reveal>
-          </div>
+          <Reveal>
+            <div className="mb-24">
+              <h2 className="sr-only">Send a Message</h2>
+              <Form />
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="border-t border-rule pt-12">
+              <p className="text-dim text-sm mb-5">For those who prefer credentials on paper:</p>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
+                Download Resume &rarr;
+              </a>
+            </div>
+          </Reveal>
         </section>
       </div>
     </div>
