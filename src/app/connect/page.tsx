@@ -48,7 +48,7 @@ export default function Connect() {
           <Reveal>
             <div className="border-t border-rule pt-12">
               <p className="text-dim text-sm mb-5">For those who prefer credentials on paper:</p>
-              <a href="/resume/Renata_Aguilar_Resume.pdf" target="_blank" rel="noopener noreferrer" download className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
+              <a href="https://drive.google.com/file/d/1lZRJF55l5TUZn-Jp-iDqR6b4pXTWQiG0/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
                 Download Resume &rarr;
               </a>
             </div>
