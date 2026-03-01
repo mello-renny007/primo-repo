@@ -2,7 +2,18 @@ import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: "How I Think" };
+export const metadata: Metadata = {
+  title: "How I Think - TPM Philosophy",
+  description:
+    "My approach to technical program management: disciplined problem-solving, structured execution, and protecting delivery integrity.",
+  alternates: { canonical: "https://renataaguilar.company/thinking" },
+  openGraph: {
+    title: "How I Think | Renata Aguilar - TPM Philosophy",
+    description:
+      "My approach to technical program management: disciplined problem-solving, structured execution, and protecting delivery integrity.",
+    url: "https://renataaguilar.company/thinking",
+  },
+};
 
 export default function Thinking() {
   return (

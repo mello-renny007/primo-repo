@@ -1,6 +1,20 @@
+import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import { ScrollIndicator } from "@/components/scroll-indicator";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Renata Aguilar | Technical Program Manager - Identity & Security Systems",
+  description:
+    "Bringing clarity to complex systems. Technical Program Manager operating at the intersection of engineering execution and strategic alignment.",
+  alternates: { canonical: "https://renataaguilar.company" },
+  openGraph: {
+    title: "Renata Aguilar | Technical Program Manager - Identity & Security Systems",
+    description:
+      "Bringing clarity to complex systems. Technical Program Manager operating at the intersection of engineering execution and strategic alignment.",
+    url: "https://renataaguilar.company",
+  },
+};
 
 export default function Home() {
   return (

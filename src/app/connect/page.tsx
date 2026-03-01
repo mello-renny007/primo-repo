@@ -2,7 +2,18 @@ import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import { Form } from "@/components/form";
 
-export const metadata: Metadata = { title: "Connect" };
+export const metadata: Metadata = {
+  title: "Connect",
+  description:
+    "Let's build something that holds under pressure. Connect with Renata Aguilar for technical program management opportunities.",
+  alternates: { canonical: "https://renataaguilar.company/connect" },
+  openGraph: {
+    title: "Connect | Renata Aguilar",
+    description:
+      "Let's build something that holds under pressure. Connect with Renata Aguilar for technical program management opportunities.",
+    url: "https://renataaguilar.company/connect",
+  },
+};
 
 export default function Connect() {
   return (
@@ -37,7 +48,7 @@ export default function Connect() {
           <Reveal>
             <div className="border-t border-rule pt-12">
               <p className="text-dim text-sm mb-5">For those who prefer credentials on paper:</p>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
+              <a href="/resume/Renata_Aguilar_Resume.pdf" target="_blank" rel="noopener noreferrer" download className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
                 Download Resume &rarr;
               </a>
             </div>

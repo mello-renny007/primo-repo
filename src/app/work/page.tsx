@@ -2,7 +2,18 @@ import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: "The Work" };
+export const metadata: Metadata = {
+  title: "The Work - TPM Portfolio",
+  description:
+    "Technical program leadership across identity platforms, authentication systems, SaaS launches, and delivery governance design.",
+  alternates: { canonical: "https://renataaguilar.company/work" },
+  openGraph: {
+    title: "The Work | Renata Aguilar - TPM Portfolio",
+    description:
+      "Technical program leadership across identity platforms, authentication systems, SaaS launches, and delivery governance design.",
+    url: "https://renataaguilar.company/work",
+  },
+};
 
 const sections = [
   {

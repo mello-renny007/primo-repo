@@ -2,7 +2,18 @@ import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: "The Journey" };
+export const metadata: Metadata = {
+  title: "The Journey",
+  description:
+    "From military aspirations to Technical Program Management - how structure, discipline, and systems thinking shaped my career path.",
+  alternates: { canonical: "https://renataaguilar.company/journey" },
+  openGraph: {
+    title: "The Journey | Renata Aguilar",
+    description:
+      "From military aspirations to Technical Program Management - how structure, discipline, and systems thinking shaped my career path.",
+    url: "https://renataaguilar.company/journey",
+  },
+};
 
 export default function Journey() {
   return (
