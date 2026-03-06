@@ -15,25 +15,6 @@ export const metadata: Metadata = {
   },
 };
 
-const sections = [
-  {
-    title: "Identity & Security Platforms",
-    text: "Led decentralized identity initiatives aligned with emerging standards and regulatory ambiguity. Coordinated backend, API, compliance, and ecosystem stakeholders to deliver interoperable solutions.",
-  },
-  {
-    title: "Enterprise Authentication Systems",
-    text: "Directed cross-functional delivery for passwordless authentication platforms supporting enterprise environments. Strengthened roadmap predictability and Agile execution maturity.",
-  },
-  {
-    title: "SaaS Product Launches",
-    text: "Managed MVP-to-commercialization lifecycles, translating market ambiguity into prioritized engineering roadmaps.",
-  },
-  {
-    title: "Governance & Delivery Design",
-    text: "Built program structures and delivery governance models that improved cross-team visibility and milestone predictability.",
-  },
-];
-
 export default function Work() {
   return (
     <div className="px-6 md:px-12">
@@ -47,22 +28,96 @@ export default function Work() {
           </p>
 
           <div className="space-y-20">
-            {sections.map((s, i) => (
-              <Reveal key={i}>
-                <article className="border-t border-rule pt-10">
-                  <h2 className="font-serif text-2xl md:text-3xl tracking-tight mb-5">
-                    {s.title}
-                  </h2>
-                  <p className="text-dim leading-[1.8]">{s.text}</p>
-                </article>
-              </Reveal>
-            ))}
+            <Reveal>
+              <article className="border-t border-rule pt-10">
+                <h2 className="font-serif text-2xl md:text-3xl tracking-tight mb-2">
+                  Identity &amp; Security Platforms
+                </h2>
+                <p className="text-dim text-lg mb-6">Verifiable Digital Credentials Pilot</p>
+                <div className="space-y-6 text-dim leading-[1.8]">
+                  <p>
+                    The challenge wasn&apos;t just technical&mdash;it involved aligning more than ten ecosystem partners around emerging identity standards that were still evolving.
+                  </p>
+                  <p>
+                    I coordinated backend engineering, API development, compliance stakeholders, and partner organizations to translate cryptographic requirements and regulatory uncertainty into a workable delivery plan.
+                  </p>
+                  <p>
+                    The result was a pilot platform capable of issuing and verifying credentials while maintaining interoperability across partner implementations.
+                  </p>
+                </div>
+              </article>
+            </Reveal>
+
+            <Reveal>
+              <article className="border-t border-rule pt-10">
+                <h2 className="font-serif text-2xl md:text-3xl tracking-tight mb-2">
+                  Enterprise Authentication Systems
+                </h2>
+                <p className="text-dim text-lg mb-6">Passwordless Authentication Platform</p>
+                <div className="space-y-6 text-dim leading-[1.8]">
+                  <p>
+                    Enterprise authentication systems require balancing security standards, engineering constraints, and product usability.
+                  </p>
+                  <p>
+                    I directed cross-functional delivery across engineering, product, and security teams while strengthening roadmap clarity and Agile execution practices.
+                  </p>
+                  <p>
+                    The result was a more predictable delivery structure and improved alignment between security initiatives and product development timelines.
+                  </p>
+                </div>
+              </article>
+            </Reveal>
+
+            <Reveal>
+              <article className="border-t border-rule pt-10">
+                <h2 className="font-serif text-2xl md:text-3xl tracking-tight mb-2">
+                  SaaS Product Launches
+                </h2>
+                <p className="text-dim text-lg mb-6">MVP to Commercialization Programs</p>
+                <div className="space-y-6 text-dim leading-[1.8]">
+                  <p>
+                    Launching SaaS products often begins with market ambiguity and evolving product requirements.
+                  </p>
+                  <p>
+                    I helped translate early product vision into structured engineering priorities, aligning delivery milestones with product and business goals.
+                  </p>
+                  <p>
+                    These initiatives moved from MVP stages toward stable production environments and commercial deployment.
+                  </p>
+                </div>
+              </article>
+            </Reveal>
+
+            <Reveal>
+              <article className="border-t border-rule pt-10">
+                <h2 className="font-serif text-2xl md:text-3xl tracking-tight mb-2">
+                  Governance &amp; Delivery Design
+                </h2>
+                <p className="text-dim text-lg mb-6">Program Governance Frameworks</p>
+                <div className="space-y-6 text-dim leading-[1.8]">
+                  <p>
+                    Large initiatives often struggle when teams lack shared visibility into progress and dependencies.
+                  </p>
+                  <p>
+                    I designed program governance structures that improved milestone predictability, decision-making clarity, and cross-team coordination.
+                  </p>
+                  <p>
+                    The result was stronger delivery alignment across initiatives involving multiple engineering and operational teams.
+                  </p>
+                </div>
+              </article>
+            </Reveal>
           </div>
 
           <Reveal>
-            <p className="text-fg text-lg mt-24 mb-12">
-              The environments change. The discipline remains the same.
-            </p>
+            <div className="mt-24 mb-12">
+              <p className="text-fg text-lg">
+                The environments change. The discipline remains the same.
+              </p>
+              <p className="text-dim text-lg mt-4">
+                Creating clarity, alignment, and forward momentum inside complex technical systems.
+              </p>
+            </div>
           </Reveal>
 
           <Reveal>
