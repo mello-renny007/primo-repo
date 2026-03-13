@@ -8,6 +8,7 @@ const links = [
   { href: "/journey", label: "The Journey" },
   { href: "/thinking", label: "How I Think" },
   { href: "/work", label: "The Work" },
+  { href: "/ideas", label: "Ideas" },
   { href: "/connect", label: "Connect" },
 ];
 
@@ -48,11 +49,11 @@ export function Nav() {
                 <Link
                   href={link.href}
                   className={`text-sm tracking-[0.06em] pb-0.5 border-b transition-colors duration-200 ${
-                    pathname === link.href
+                    (pathname === link.href || pathname.startsWith(link.href + "/"))
                       ? "text-fg border-accent"
                       : "text-dim border-transparent hover:border-accent"
                   }`}
-                  aria-current={pathname === link.href ? "page" : undefined}
+                  aria-current={(pathname === link.href || pathname.startsWith(link.href + "/")) ? "page" : undefined}
                 >
                   {link.label}
                 </Link>
@@ -84,9 +85,9 @@ export function Nav() {
                     href={link.href}
                     onClick={close}
                     className={`text-2xl tracking-wide transition-colors duration-200 ${
-                      pathname === link.href ? "text-fg" : "text-dim"
+                      (pathname === link.href || pathname.startsWith(link.href + "/")) ? "text-fg" : "text-dim"
                     }`}
-                    aria-current={pathname === link.href ? "page" : undefined}
+                    aria-current={(pathname === link.href || pathname.startsWith(link.href + "/")) ? "page" : undefined}
                   >
                     {link.label}
                   </Link>

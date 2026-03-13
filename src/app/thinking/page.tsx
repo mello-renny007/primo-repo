@@ -69,8 +69,8 @@ export default function Thinking() {
               <Link href="/work" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
                 The Work &rarr;
               </Link>
-              <Link href="/connect" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
-                Connect &rarr;
+              <Link href="/ideas" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
+                Ideas &rarr;
               </Link>
             </div>
           </Reveal>

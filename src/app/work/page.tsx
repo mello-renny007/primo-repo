@@ -121,9 +121,14 @@ export default function Work() {
           </Reveal>
 
           <Reveal>
-            <Link href="/connect" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
-              Connect &rarr;
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-5">
+              <Link href="/ideas" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
+                Ideas &rarr;
+              </Link>
+              <Link href="/connect" className="inline-block border border-accent text-fg text-sm tracking-[0.06em] px-7 py-3 hover:border-fg transition-colors duration-200">
+                Connect &rarr;
+              </Link>
+            </div>
           </Reveal>
         </section>
       </div>
