@@ -17,9 +17,32 @@ export const metadata: Metadata = {
   },
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "The Strategy Alignment Stack: Why Organizations Confuse Strategy, Planning, and Execution",
+  author: {
+    "@type": "Person",
+    name: "Renata Aguilar",
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://renataaguilar.company/ideas/strategy-alignment-stack",
+  },
+  about: {
+    "@type": "Thing",
+    name: "Strategy Alignment Stack",
+    description: "A framework that separates strategy, planning, and execution to improve organizational alignment.",
+  },
+};
+
 export default function StrategyAlignmentStack() {
   return (
     <div className="px-6 md:px-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <div className="max-w-prose mx-auto">
         <article className="pt-48 pb-32">
           {/* Header */}
@@ -29,6 +52,20 @@ export default function StrategyAlignmentStack() {
             </h1>
             <p className="text-dim text-sm">March 2026 &middot; 5 min read</p>
           </header>
+
+          {/* Definition Block */}
+          <Reveal>
+            <div className="mb-20 border border-accent px-8 py-10">
+              <div className="space-y-6 text-dim text-lg leading-[1.8]">
+                <p>
+                  <span className="text-fg font-semibold">The Strategy Alignment Stack</span> is a framework that separates three commonly conflated layers of organizational work: strategy, planning, and execution.
+                </p>
+                <p>
+                  By distinguishing these layers, organizations can better align long-term goals with operational delivery and reduce coordination friction across teams.
+                </p>
+              </div>
+            </div>
+          </Reveal>
 
           {/* The Problem */}
           <Reveal>
@@ -104,19 +141,19 @@ export default function StrategyAlignmentStack() {
               <h3 className="font-serif text-xl md:text-2xl tracking-tight mb-10">The Three Layers</h3>
               <div className="space-y-10">
                 <div>
-                  <h3 className="font-serif text-xl md:text-2xl tracking-tight mb-4">Strategy (The WHY)</h3>
+                  <p className="text-fg font-semibold text-lg mb-2">Strategy (The WHY)</p>
                   <p className="text-dim text-lg leading-[1.8] mb-1">Answers the why and where so that there is direction and tradeoffs.</p>
                   <p className="text-dim text-lg leading-[1.8]">Objective: Defines direction and strategic choices.</p>
                   <p className="text-dim text-lg leading-[1.8]">Strategy outcome: Strategic choice.</p>
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl md:text-2xl tracking-tight mb-4">Planning (The HOW)</h3>
+                  <p className="text-fg font-semibold text-lg mb-2">Planning (The HOW)</p>
                   <p className="text-dim text-lg leading-[1.8] mb-1">Answers how to pursue the strategy and organizes the work.</p>
                   <p className="text-dim text-lg leading-[1.8]">Objective: Translates strategy into priorities and structured initiatives.</p>
                   <p className="text-dim text-lg leading-[1.8]">Planning output: Priorities structure.</p>
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl md:text-2xl tracking-tight mb-4">Execution (The WHAT)</h3>
+                  <p className="text-fg font-semibold text-lg mb-2">Execution (The WHAT)</p>
                   <p className="text-dim text-lg leading-[1.8] mb-1">Answers what is being done towards the plan.</p>
                   <p className="text-dim text-lg leading-[1.8]">Objective: Delivers the work required to implement the plan.</p>
                   <p className="text-dim text-lg leading-[1.8]">Execution output: Delivery of work.</p>
@@ -125,16 +162,51 @@ export default function StrategyAlignmentStack() {
             </div>
           </Reveal>
 
-          {/* Visual Framework */}
+          {/* The Strategy Alignment Stack - Visual */}
           <Reveal>
-            <div className="my-20 border border-rule py-12 px-8">
-              <div className="flex flex-col items-center gap-4 text-center">
-                <p className="text-fg font-serif text-xl">Strategy</p>
-                <span className="text-dim">&darr;</span>
-                <p className="text-fg font-serif text-xl">Planning</p>
-                <span className="text-dim">&darr;</span>
-                <p className="text-fg font-serif text-xl">Execution</p>
-              </div>
+            <div className="mb-20">
+              <h3 className="font-serif text-xl md:text-2xl tracking-tight mb-10">The Strategy Alignment Stack</h3>
+              <svg
+                viewBox="0 0 600 520"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-full max-w-lg mx-auto"
+                role="img"
+                aria-label="Strategy Alignment Stack diagram showing three layers: Strategy, Planning, and Execution connected by downward arrows"
+              >
+                {/* Strategy Box */}
+                <rect x="40" y="20" width="520" height="110" rx="8" stroke="#2F3E46" strokeWidth="1.5" fill="#111111" />
+                <text x="300" y="58" textAnchor="middle" fill="#E8E8E8" fontFamily="var(--font-playfair), serif" fontSize="22" fontWeight="600">Strategy</text>
+                <text x="300" y="90" textAnchor="middle" fill="#9C9C9C" fontFamily="var(--font-inter), sans-serif" fontSize="13">Defines long-term direction and</text>
+                <text x="300" y="110" textAnchor="middle" fill="#9C9C9C" fontFamily="var(--font-inter), sans-serif" fontSize="13">organizational goals.</text>
+
+                {/* Arrow 1 */}
+                <line x1="300" y1="130" x2="300" y2="170" stroke="#2F3E46" strokeWidth="1.5" />
+                <polygon points="292,164 300,176 308,164" fill="#2F3E46" />
+
+                {/* Planning Box */}
+                <rect x="40" y="180" width="520" height="110" rx="8" stroke="#2F3E46" strokeWidth="1.5" fill="#111111" />
+                <text x="300" y="218" textAnchor="middle" fill="#E8E8E8" fontFamily="var(--font-playfair), serif" fontSize="22" fontWeight="600">Planning</text>
+                <text x="300" y="250" textAnchor="middle" fill="#9C9C9C" fontFamily="var(--font-inter), sans-serif" fontSize="13">Translates strategy into initiatives</text>
+                <text x="300" y="270" textAnchor="middle" fill="#9C9C9C" fontFamily="var(--font-inter), sans-serif" fontSize="13">and roadmaps.</text>
+
+                {/* Arrow 2 */}
+                <line x1="300" y1="290" x2="300" y2="330" stroke="#2F3E46" strokeWidth="1.5" />
+                <polygon points="292,324 300,336 308,324" fill="#2F3E46" />
+
+                {/* Execution Box */}
+                <rect x="40" y="340" width="520" height="110" rx="8" stroke="#2F3E46" strokeWidth="1.5" fill="#111111" />
+                <text x="300" y="378" textAnchor="middle" fill="#E8E8E8" fontFamily="var(--font-playfair), serif" fontSize="22" fontWeight="600">Execution</text>
+                <text x="300" y="410" textAnchor="middle" fill="#9C9C9C" fontFamily="var(--font-inter), sans-serif" fontSize="13">Delivers outcomes through coordinated</text>
+                <text x="300" y="430" textAnchor="middle" fill="#9C9C9C" fontFamily="var(--font-inter), sans-serif" fontSize="13">operations.</text>
+
+                {/* Caption */}
+                <text x="300" y="480" textAnchor="middle" fill="#9C9C9C" fontFamily="var(--font-inter), sans-serif" fontSize="12" fontStyle="italic">Purpose: Align strategic intent with operational delivery.</text>
+
+                {/* Signature */}
+                <text x="560" y="510" textAnchor="end" fill="#2F3E46" fontFamily="var(--font-inter), sans-serif" fontSize="10">Strategy Alignment Stack — Renata Aguilar</text>
+              </svg>
+
             </div>
           </Reveal>
 
