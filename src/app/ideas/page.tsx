@@ -18,14 +18,22 @@ export const metadata: Metadata = {
 
 const moreIdeas = [
   {
+    title: "Is It Strategy, Planning, or Execution? Introducing The Strategy Alignment Stack",
+    description: "Why organizations often confuse strategic direction with planning and delivery\u2014and how a simple framework can bring clarity.",
+    readTime: "March 2026 \u00b7 5 min read",
+    slug: "strategy-alignment-stack",
+  },
+  {
     title: "Execution Doesn\u2019t Fix Strategy",
     description: "Why delivering more work often hides deeper strategic problems.",
     readTime: "Coming Soon",
+    slug: null,
   },
   {
     title: "Alignment vs Consensus in Leadership",
     description: "Why leadership alignment is not the same as agreement.",
     readTime: "Coming Soon",
+    slug: null,
   },
 ];
 
@@ -45,14 +53,14 @@ export default function Ideas() {
           <Reveal>
             <article className="mb-24">
               <p className="text-dim text-xs uppercase tracking-[0.15em] mb-4">Featured</p>
-              <Link href="/ideas/strategy-alignment-stack" className="group">
+              <Link href="/ideas/everyone-is-rushing-into-ai" className="group">
                 <h2 className="font-serif text-3xl md:text-4xl tracking-tight leading-[1.15] mb-4 text-fg group-hover:opacity-80 transition-opacity duration-200">
-                  Is It Strategy, Planning, or Execution? Introducing The Strategy Alignment Stack
+                  Everyone Is Rushing Into AI. I Spent a Month Asking If They Should.
                 </h2>
                 <p className="text-dim leading-[1.7] mb-4">
-                  Why organizations often confuse strategic direction with planning and delivery&mdash;and how a simple framework can bring clarity.
+                  What building an AI product taught me about the role that comes after Technical Program Manager&mdash;and the AI Orchestration Framework I developed along the way.
                 </p>
-                <p className="text-dim text-sm">March 2026 &middot; 5 min read</p>
+                <p className="text-dim text-sm">April 2026 &middot; 12 min read</p>
               </Link>
             </article>
           </Reveal>
@@ -66,11 +74,23 @@ export default function Ideas() {
               <div className="space-y-0">
                 {moreIdeas.map((idea, i) => (
                   <article key={i} className="border-t border-rule py-10">
-                    <h3 className="font-serif text-xl md:text-2xl tracking-tight mb-3 text-fg">
-                      {idea.title}
-                    </h3>
-                    <p className="text-dim leading-[1.7] mb-3">{idea.description}</p>
-                    <p className="text-dim text-sm">{idea.readTime}</p>
+                    {idea.slug ? (
+                      <Link href={`/ideas/${idea.slug}`} className="group">
+                        <h3 className="font-serif text-xl md:text-2xl tracking-tight mb-3 text-fg group-hover:opacity-80 transition-opacity duration-200">
+                          {idea.title}
+                        </h3>
+                        <p className="text-dim leading-[1.7] mb-3">{idea.description}</p>
+                        <p className="text-dim text-sm">{idea.readTime}</p>
+                      </Link>
+                    ) : (
+                      <>
+                        <h3 className="font-serif text-xl md:text-2xl tracking-tight mb-3 text-fg">
+                          {idea.title}
+                        </h3>
+                        <p className="text-dim leading-[1.7] mb-3">{idea.description}</p>
+                        <p className="text-dim text-sm">{idea.readTime}</p>
+                      </>
+                    )}
                   </article>
                 ))}
               </div>
