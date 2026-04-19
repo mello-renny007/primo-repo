@@ -61,7 +61,7 @@ export default function WhatBuildingAnAIProductTaughtMe() {
             <div className="mb-20 border border-accent px-8 py-10">
               <div className="space-y-6 text-dim text-lg leading-[1.8]">
                 <p>
-                  <span className="text-fg font-semibold">The lessons nobody posts about &mdash;</span> from someone who started over.
+                  The first version didn&rsquo;t work. Starting over was the best decision I made &mdash; and the one that changed how I think about building with AI entirely.
                 </p>
               </div>
             </div>
