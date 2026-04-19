@@ -18,6 +18,12 @@ export const metadata: Metadata = {
 
 const moreIdeas = [
   {
+    title: "Everyone Is Rushing Into AI. I Spent a Month Asking If They Should.",
+    description: "What building an AI product taught me about the role that comes after Technical Program Manager\u2014and the AI Orchestration Framework I developed along the way.",
+    readTime: "April 2026 \u00b7 12 min read",
+    slug: "everyone-is-rushing-into-ai",
+  },
+  {
     title: "Is It Strategy, Planning, or Execution? Introducing The Strategy Alignment Stack",
     description: "Why organizations often confuse strategic direction with planning and delivery\u2014and how a simple framework can bring clarity.",
     readTime: "March 2026 \u00b7 5 min read",
@@ -53,14 +59,14 @@ export default function Ideas() {
           <Reveal>
             <article className="mb-24">
               <p className="text-dim text-xs uppercase tracking-[0.15em] mb-4">Featured</p>
-              <Link href="/ideas/everyone-is-rushing-into-ai" className="group">
+              <Link href="/ideas/what-building-an-ai-product-taught-me" className="group">
                 <h2 className="font-serif text-3xl md:text-4xl tracking-tight leading-[1.15] mb-4 text-fg group-hover:opacity-80 transition-opacity duration-200">
-                  Everyone Is Rushing Into AI. I Spent a Month Asking If They Should.
+                  What Building an AI Product Actually Taught Me About AI
                 </h2>
                 <p className="text-dim leading-[1.7] mb-4">
-                  What building an AI product taught me about the role that comes after Technical Program Manager&mdash;and the AI Orchestration Framework I developed along the way.
+                  The lessons nobody posts about &mdash; from someone who started over.
                 </p>
-                <p className="text-dim text-sm">April 2026 &middot; 12 min read</p>
+                <p className="text-dim text-sm">April 2026 &middot; 8 min read</p>
               </Link>
             </article>
           </Reveal>

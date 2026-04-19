@@ -370,12 +370,16 @@ export default function EveryoneIsRushingIntoAI() {
               <h2 className="font-serif text-2xl tracking-tight mb-8">More Ideas</h2>
               <div className="space-y-6">
                 <div>
-                  <p className="text-fg">Is It Strategy, Planning, or Execution? Introducing The Strategy Alignment Stack</p>
-                  <p className="text-dim text-sm">Why organizations often confuse strategic direction with planning and delivery &mdash; and how a simple framework can bring clarity.</p>
+                  <Link href="/ideas/what-building-an-ai-product-taught-me" className="group">
+                    <p className="text-fg group-hover:opacity-80 transition-opacity duration-200">What Building an AI Product Actually Taught Me About AI</p>
+                    <p className="text-dim text-sm">The lessons nobody posts about &mdash; from someone who started over.</p>
+                  </Link>
                 </div>
                 <div>
-                  <p className="text-fg">Execution Doesn&rsquo;t Fix Strategy</p>
-                  <p className="text-dim text-sm">Why delivering more work often hides deeper strategic problems.</p>
+                  <Link href="/ideas/strategy-alignment-stack" className="group">
+                    <p className="text-fg group-hover:opacity-80 transition-opacity duration-200">Is It Strategy, Planning, or Execution? Introducing The Strategy Alignment Stack</p>
+                    <p className="text-dim text-sm">Why organizations often confuse strategic direction with planning and delivery &mdash; and how a simple framework can bring clarity.</p>
+                  </Link>
                 </div>
               </div>
             </div>
